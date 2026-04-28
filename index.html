@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HimCraft Product Story</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Color Palette & Basic Setup */
+        :root {
+            --primary-color: #2C5F2D; /* Forest Green */
+            --secondary-color: #97BC62; /* Soft Green */
+            --accent-color: #E07A5F; /* Terracotta / Clay */
+            --bg-color: #F4F1DE; /* Warm Sand */
+            --text-dark: #3D405B;
+            --text-light: #6c757d;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            padding: 20px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-weight: 300;
+            margin: 10px 0 0;
+            opacity: 0.9;
+        }
+
+        /* Grid Layout for Product & Details */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        /* Product Image Container (Flex Column) */
+        .product-image {
+            display: flex;
+            flex-direction: column; /* Images stacked vertically */
+            gap: 20px; /* Space between images */
+        }
+
+        /* All Images in the container */
+        .product-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-image img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Headings inside content */
+        h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Artisan Card Profile */
+        .artisan-card {
+            display: flex;
+            align-items: center;
+            background: #fdfbf7;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+        }
+
+        .artisan-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+            margin-right: 20px;
+        }
+
+        .artisan-info p {
+            margin: 4px 0;
+            font-size: 0.95rem;
+        }
+
+        .label {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        /* Badges for Craft tags */
+        .tag {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: white;
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        /* Story Text */
+        .story p {
+            line-height: 1.7;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            text-align: justify;
+        }
+
+        /* Footer */
+        .footer {
+            background: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+        }
+
+        .footer span {
+            color: #e63946;
+            font-size: 1.2rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>HimCraft Product Story</h1>
+        <p>A Journey from Loom to Living Room</p>
+    </div>
+
+    <div class="content-grid">
+        
+        <div class="product-image">
+            <img src="im1.png" alt="Product Top View"> <img src="im2.png" alt="HimCraft Handloom Product (Main View)">  </div>
+
+        <div class="product-details">
+            
+            <div class="artisan-card">
+                <img src="artisan.jpg" alt="Ramchand Ji">
+                <div class="artisan-info">
+                    <p><span class="label">Name:</span> Ram Lal</p>
+                    <p><span class="label">Location:</span> Bhunter, Kullu (H.P.)</p>
+                    <span class="tag">Handloom Weaving</span>
+                </div>
+            </div>
+
+            <div class="story">
+                <h3>About the Product</h3>
+                <p>
+                    A timeless piece crafted in the heart of Himachal.
+Handwoven by skilled artisan Ramchand Ji, this muffler features the iconic Kullu Patti design inspired by Himalayan traditions.
+
+Made from 100% pure wool, it offers warmth, comfort, and a touch of elegance — perfect for everyday wear or special occasions.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Proudly supporting local artisans of Himachal Pradesh <span>❤️</span></p>
+    </div>
+
+</div>
+
+</body>
+</html>
